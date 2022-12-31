@@ -30,18 +30,20 @@ section#login {
     width: 250px;
     height: 500px;
     border-radius: 20px;
+    overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.400);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem {
     display: block;
     background: #846B57 url(../imagens/pexels-bade-saba-13945391.jpg) left bottom no-repeat;
     background-size: cover;
-    border-radius: 20px 20px 0px 0px;
     height: 200px;
 }
 
