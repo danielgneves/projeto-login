@@ -67,6 +67,7 @@ div#formulario > h1 {
 
 div#formulario > p {
     font-size: 0.8em;
+    text-align: justify;
 }
 
 form > div.campo {
@@ -74,11 +75,27 @@ form > div.campo {
     height: 40px;
     margin: 5px 0px;
     border-radius: 5px;
-    
+    border: 2px solid #5a493b;    
 }
 
 div.campo > label {
     display: none;
+}
+
+div.campo > span {
+    color: white;
+    width: 40px;
+    padding: 5px;
+    font-size: 2em;
+}
+
+div.campo > input {
+    height: 100%;
+    width: calc(100% - 45px);
+    background-color: #c29f82;
+    border: none;
+    border-radius: 5px;
+    transform: translate(1px, -14px);
 }
 
 form > div > input[type=submit] {
@@ -95,6 +112,10 @@ form > div > input[type=submit] {
 
 div > input[type=submit]:hover {
     background-color: #5a493b;
+}
+
+div > input:focus-within {
+    background-color: white;
 }
 
 div > a.botao {
